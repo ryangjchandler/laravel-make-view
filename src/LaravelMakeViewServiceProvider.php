@@ -2,9 +2,9 @@
 
 namespace Ryangjchandler\LaravelMakeView;
 
+use Ryangjchandler\LaravelMakeView\Commands\MakeViewCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Ryangjchandler\LaravelMakeView\Commands\MakeViewCommand;
 
 class LaravelMakeViewServiceProvider extends PackageServiceProvider
 {
