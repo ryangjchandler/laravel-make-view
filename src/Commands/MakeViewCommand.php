@@ -2,7 +2,6 @@
 
 namespace RyanChandler\LaravelMakeView\Commands;
 
-use Faker\Core\File;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Inspiring;
