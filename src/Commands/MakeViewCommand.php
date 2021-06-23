@@ -22,11 +22,20 @@ class MakeViewCommand extends Command
 
         (new Filesystem)->ensureDirectoryExists($dir);
 
-        $view = file_get_contents(__DIR__.'/stubs/view.stub');
+        $view = $this->getStub('view');
         $view = str_replace('{{ inspire }}', Inspiring::quote(), $view);
 
         (new Filesystem)->put($path, $view);
 
         $this->comment('View created successfully.');
+    }
+
+    protected function getStub($name)
+    {
+        if (file_exists($path = base_path('stubs/'.$name.'.stub'))) {
+            return file_get_contents($path);
+        }
+
+        return __DIR__.'/stubs/'.$name.'.stub';
     }
 }
