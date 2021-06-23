@@ -2,7 +2,6 @@
 
 namespace RyanChandler\LaravelMakeView;
 
-use Ryangjchandler\LaravelMakeView\Commands\MakeViewCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use RyanChandler\LaravelMakeView\Commands\MakeViewCommand;
