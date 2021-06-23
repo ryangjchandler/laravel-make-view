@@ -16,7 +16,7 @@ class MakeViewCommand extends Command
     public function handle()
     {
         $path = resource_path(
-            'views' . DIRECTORY_SEPARATOR . str_replace('.', DIRECTORY_SEPARATOR, $this->argument('path'))
+            'views' . DIRECTORY_SEPARATOR . str_replace('.', DIRECTORY_SEPARATOR, $this->argument('path')) . '.blade.php'
         );
 
         $dir = dirname($path);
