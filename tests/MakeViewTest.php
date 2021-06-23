@@ -8,7 +8,7 @@ class MakeViewTest extends TestCase
     public function it_creates_a_view()
     {
         $this->artisan('make:view', [
-            'path' => 'example'
+            'path' => 'example',
         ]);
 
         $this->assertFileExists(
@@ -20,7 +20,7 @@ class MakeViewTest extends TestCase
     public function it_creates_nested_views()
     {
         $this->artisan('make:view', [
-            'path' => 'nested.view.file'
+            'path' => 'nested.view.file',
         ]);
 
         $this->assertFileExists(
