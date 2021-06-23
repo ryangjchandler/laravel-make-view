@@ -36,13 +36,13 @@ composer require ryangjchandler/laravel-make-view
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="Ryangjchandler\LaravelMakeView\LaravelMakeViewServiceProvider" --tag="laravel-make-view-migrations"
+php artisan vendor:publish --provider="RyanChandler\LaravelMakeView\LaravelMakeViewServiceProvider" --tag="laravel-make-view-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Ryangjchandler\LaravelMakeView\LaravelMakeViewServiceProvider" --tag="laravel-make-view-config"
+php artisan vendor:publish --provider="RyanChandler\LaravelMakeView\LaravelMakeViewServiceProvider" --tag="laravel-make-view-config"
 ```
 
 This is the contents of the published config file:
@@ -55,7 +55,7 @@ return [
 ## Usage
 
 ```php
-$laravel-make-view = new Ryangjchandler\LaravelMakeView();
+$laravel-make-view = new RyanChandler\LaravelMakeView();
 echo $laravel-make-view->echoPhrase('Hello, Spatie!');
 ```
 

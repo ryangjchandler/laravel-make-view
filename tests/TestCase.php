@@ -1,10 +1,10 @@
 <?php
 
-namespace Ryangjchandler\LaravelMakeView\Tests;
+namespace RyanChandler\LaravelMakeView\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Ryangjchandler\LaravelMakeView\LaravelMakeViewServiceProvider;
+use RyanChandler\LaravelMakeView\LaravelMakeViewServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Ryangjchandler\\LaravelMakeView\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'RyanChandler\\LaravelMakeView\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

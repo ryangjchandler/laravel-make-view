@@ -30,13 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Ryangjchandler\\LaravelMakeView\\": "src",
-            "Ryangjchandler\\LaravelMakeView\\Database\\Factories\\": "database/factories"
+            "RyanChandler\\LaravelMakeView\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ryangjchandler\\LaravelMakeView\\Tests\\": "tests"
+            "RyanChandler\\LaravelMakeView\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ryangjchandler\\LaravelMakeView\\LaravelMakeViewServiceProvider"
+                "RyanChandler\\LaravelMakeView\\LaravelMakeViewServiceProvider"
             ],
             "aliases": {
-                "LaravelMakeView": "Ryangjchandler\\LaravelMakeView\\LaravelMakeViewFacade"
+                "LaravelMakeView": "RyanChandler\\LaravelMakeView\\LaravelMakeViewFacade"
             }
         }
     },

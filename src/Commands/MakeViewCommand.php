@@ -1,6 +1,6 @@
 <?php
 
-namespace Ryangjchandler\LaravelMakeView\Commands;
+namespace RyanChandler\LaravelMakeView\Commands;
 
 use Faker\Core\File;
 use Illuminate\Console\Command;

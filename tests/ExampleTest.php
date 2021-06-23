@@ -1,6 +1,6 @@
 <?php
 
-namespace Ryangjchandler\LaravelMakeView\Tests;
+namespace RyanChandler\LaravelMakeView\Tests;
 
 class ExampleTest extends TestCase
 {

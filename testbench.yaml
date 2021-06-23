@@ -1,2 +1,2 @@
 providers:
-  - Ryangjchandler\LaravelMakeView\LaravelMakeViewServiceProvider
+  - RyanChandler\LaravelMakeView\LaravelMakeViewServiceProvider
