@@ -15,7 +15,10 @@ class MakeViewCommand extends Command
 
     public function handle()
     {
-        $path = str_replace('.', DIRECTORY_SEPARATOR, $this->argument('path'));
+        $path = resource_path(
+            'views' . DIRECTORY_SEPARATOR . str_replace('.', DIRECTORY_SEPARATOR, $this->argument('path'))
+        );
+
         $dir = dirname($path);
 
         (new Filesystem)->ensureDirectoryExists($dir);
